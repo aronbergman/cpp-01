@@ -6,7 +6,7 @@
 /*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/06 15:43:14 by abergman          #+#    #+#             */
-/*   Updated: 2025/01/06 15:52:03 by abergman         ###   ########.fr       */
+/*   Updated: 2025/01/06 16:09:31 by abergman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,12 @@ Zombie::~Zombie()
 {
 }
 
-void Zombie::setIndex(int index)
+void Zombie::setIndex(string name)
 {
-    this->index = index;
+    this->name = name;
 }
 
-int Zombie::getIndex(void)
+string Zombie::getIndex(void)
 {
-    return(this->index);
+    return(this->name);
 }

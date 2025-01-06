@@ -6,22 +6,22 @@
 #    By: abergman <abergman@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/17 11:36:19 by abergman          #+#    #+#              #
-#    Updated: 2024/12/24 18:27:49 by abergman         ###   ########.fr        #
+#    Updated: 2025/01/06 16:12:20 by abergman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 NAME	:= phonebook
 OBJ_DIR := bin
-SOURCE	:= main.cpp phonebook.cpp contact.cpp 
+SOURCE	:= main.cpp Zombie.cpp 
 OBJECTS	:= $(addprefix $(OBJ_DIR)/, $(SOURCE:.cpp=.o))
-HEADERS := phonebook.hpp contact.hpp
+HEADERS := Zombie.hpp
 
 CC		:= c++
 FLAGS	:= -std=c++98 -Wall -Wextra -Werror -g3
 
 all: $(OBJ_DIR) $(NAME)
-	toilet -f smblock --filter metal "ex01: ./phonebook"
+	toilet -f smblock --filter metal "ex00: ./zombie"
 
 $(OBJ_DIR):
 	mkdir -p $(OBJ_DIR)

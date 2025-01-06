@@ -6,7 +6,7 @@
 /*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/06 15:43:08 by abergman          #+#    #+#             */
-/*   Updated: 2025/01/06 15:52:03 by abergman         ###   ########.fr       */
+/*   Updated: 2025/01/06 16:10:09 by abergman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,15 @@
 class Zombie
 {
     private:
-        int index;
+        string name;
     
     public:
         Zombie();
         ~Zombie();
 
-        void setIndex(int index);
+        void setIndex(string name);
 
-        int getIndex();
+        string getIndex();
 };
 
 #endif
