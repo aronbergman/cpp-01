@@ -19,7 +19,7 @@ CC		:= c++
 FLAGS	:= -std=c++98 -Wall -Wextra -Werror -g3
 
 all: $(OBJ_DIR) $(NAME)
-	toilet -f smblock --filter metal "ex00: ./brain"
+	toilet -f smblock --filter metal "ex02: ./brain"
 
 $(OBJ_DIR):
 	mkdir -p $(OBJ_DIR)
