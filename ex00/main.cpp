@@ -14,19 +14,8 @@
 #include <csignal>
 #include <limits>
 
-void	ft_sigquit_handler(int sig)
-{
-	(void)sig;
-	std::cout << GRN << "\nThe process is killed";
-	std::cout << RESET << std::endl;
-	_exit(0);
-}
-
 int	main(void)
 {
-	signal(SIGQUIT, ft_sigquit_handler);
-
-	std::cout << std::endl;
 	// Stack allocation through randomChump
     std::cout << BLUE << "Testing randomChump (stack allocation):" << RESET << std::endl;
     randomChump("Stack Zombie");
