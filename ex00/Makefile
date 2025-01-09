@@ -6,14 +6,13 @@
 #    By: abergman <abergman@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/17 11:36:19 by abergman          #+#    #+#              #
-#    Updated: 2025/01/06 16:12:20 by abergman         ###   ########.fr        #
+#    Updated: 2025/01/09 16:57:05 by abergman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-
-NAME	:= phonebook
+NAME	:= zombie
 OBJ_DIR := bin
-SOURCE	:= main.cpp Zombie.cpp 
+SOURCE	:= main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 OBJECTS	:= $(addprefix $(OBJ_DIR)/, $(SOURCE:.cpp=.o))
 HEADERS := Zombie.hpp
 

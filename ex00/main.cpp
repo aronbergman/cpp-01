@@ -24,33 +24,19 @@ void	ft_sigquit_handler(int sig)
 
 int	main(void)
 {
-	PhoneBook	phonebook;
-	Contact		contact;
-
-	std::string input;
 	signal(SIGQUIT, ft_sigquit_handler);
-	while (input != "3")
-	{
-		std::cout << BLUE << "Enter a number of command for continue\n" << RESET;
-		std::cout << "(Add: " << BLCK << "1" << RESET;
-		std::cout << "; Search: " << BLCK << "2" << RESET;
-		std::cout << "; Exit: " << BLCK << "3" << RESET << ") ";
-		std::getline(std::cin, input);
-		if (input == "1")
-			phonebook.addContact();
-		if (input == "2")
-			phonebook.searchContact();
-		if (std::cin.eof())
-		{
-			std::cout << '\n';
-			break ;
-		}
-		if (std::cin.fail())
-		{
-			std::cin.clear();
-			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-			return (0);
-		}
-	}
+
+	std::cout << std::endl;
+	// Stack allocation through randomChump
+    std::cout << BLUE << "Testing randomChump (stack allocation):" << RESET << std::endl;
+    randomChump("Stack Zombie");
+    
+    // Heap allocation through newZombie
+    std::cout << BLUE << "\nTesting newZombie (heap allocation):" << RESET<< std::endl;
+    Zombie* heapZombie = newZombie("Heap Zombie");
+    heapZombie->announce();
+    
+    // Delete heap-allocated zombie
+    delete heapZombie;
 	return (0);
 }
