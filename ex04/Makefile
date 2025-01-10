@@ -5,21 +5,21 @@
 #                                                     +:+ +:+         +:+      #
 #    By: abergman <abergman@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/12/17 11:36:19 by abergman          #+#    #+#              #
-#    Updated: 2025/01/10 18:39:45 by abergman         ###   ########.fr        #
+#    Created: 2025/01/10 17:38:42 by abergman          #+#    #+#              #
+#    Updated: 2025/01/10 18:39:51 by abergman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	:= unnecessaryViolence
+NAME	:= replace
 OBJ_DIR := bin
-SOURCE	:= main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
+SOURCE	:= main.cpp File.cpp
 OBJECTS	:= $(addprefix $(OBJ_DIR)/, $(SOURCE:.cpp=.o))
-HEADER	:= Weapon.hpp HumanA.hpp HumanB.hpp
+HEADER	:= File.hpp
 CC		:= c++
 FLAGS	:= -std=c++98 -Wall -Wextra -Werror -g3
 
 all: $(OBJ_DIR) $(NAME)
-	toilet -f smblock --filter metal "ex03: ./unnecessaryViolence"
+	toilet -f smblock --filter metal "ex04: ./replace"
 
 $(OBJ_DIR):
 	mkdir -p $(OBJ_DIR)
