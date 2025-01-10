@@ -6,7 +6,7 @@
 /*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 17:39:45 by abergman          #+#    #+#             */
-/*   Updated: 2025/01/10 20:51:43 by abergman         ###   ########.fr       */
+/*   Updated: 2025/01/10 22:29:51 by abergman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 #include <cstdio>
 #include <string>
 #include <iostream>
+
+#define BZISE 1024
 
 class File {
     private:

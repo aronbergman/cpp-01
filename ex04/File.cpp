@@ -6,7 +6,7 @@
 /*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 17:39:49 by abergman          #+#    #+#             */
-/*   Updated: 2025/01/10 20:51:02 by abergman         ###   ########.fr       */
+/*   Updated: 2025/01/10 22:09:24 by abergman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void File::replaceInFile(const std::string& s1, const std::string& s2)
         fclose(inFile);
         return;
     }
-    char buffer[1024];
+    char buffer[BZISE];
     std::string line;
     while (fgets(buffer, sizeof(buffer), inFile))
     {
