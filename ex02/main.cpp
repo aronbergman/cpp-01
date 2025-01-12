@@ -17,7 +17,13 @@ int	main(void)
 {
     std::cout << std::endl;
     std::string stringVAR = "HI THIS IS BRAIN";
+    
+    // The pointer requires the & operator to get the address
+    // and * to dereference
     std::string * stringPTR = & stringVAR;
+    
+    // The reference is like an alias - it's automatically 
+    // dereferenced when accessing the value
     std::string & stringREF = stringVAR;
 
     // Print memory addresses
@@ -25,11 +31,14 @@ int	main(void)
     std::cout << "string VAR: " << & stringVAR << std::endl;
     std::cout << "string PTR: " << stringPTR << std::endl;
     std::cout << "string REF: " << & stringREF << std::endl;
+
     std::cout << std::endl;
+
     std::cout << "Values:" << std::endl;
     std::cout << "stringVAR: " << stringVAR << std::endl;
     std::cout << "stringPTR: " << * stringPTR << std::endl;
     std::cout << "stringREF: " << stringREF << std::endl;
+
     std::cout << std::endl;
 	return (0);
 }

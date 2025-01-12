@@ -13,21 +13,23 @@
 #include "Zombie.hpp"
 #include <csignal>
 #include <limits>
+#include <sstream>
 
 int	main(void)
 {
     int N;
     
     N = 7;
-    Zombie* horde = zombieHorde(N, "Horde Zombie");
+    Zombie* horde = zombieHorde(N, "One of Horde Zombie");
 
     // Make all zombies announce themselves
     for (int index = 0; index < N; index++)
     {
-        std::cout << BLCK << "Zombie [index " << index << "]: " << RESET;
         horde[index].announce();
     }
 
+    std::cout << std::endl;
+    
     // Delete the entire horde
     delete[] horde;
 	return (0);
