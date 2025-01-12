@@ -6,7 +6,7 @@
 /*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 15:56:53 by abergman          #+#    #+#             */
-/*   Updated: 2025/01/10 16:52:37 by abergman         ###   ########.fr       */
+/*   Updated: 2025/01/11 21:37:53 by abergman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,4 +20,3 @@ HumanA::attack()
 {
     std::cout << this->name << " attacks with their " << this->weapon.getType() << std::endl;
 }
-

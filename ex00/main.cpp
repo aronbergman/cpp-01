@@ -14,6 +14,12 @@
 #include <csignal>
 #include <limits>
 
+/*  When choosing berween stack and heap:
+- Use stack for small, fixed-size objects with clear scope
+- Use heap for large objects or when size is unknown at compile time
+- Use heap when object needs to outlive the function where it's created
+ */
+
 int	main(void)
 {
 	// Stack allocation through randomChump
