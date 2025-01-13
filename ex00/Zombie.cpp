@@ -6,7 +6,7 @@
 /*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/06 15:43:14 by abergman          #+#    #+#             */
-/*   Updated: 2025/01/11 12:34:46 by abergman         ###   ########.fr       */
+/*   Updated: 2025/01/13 14:45:21 by abergman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 /* de la classe avec la valeur du paramètre 'name' */
 
 Zombie::Zombie(std::string name) : name(name)
-{   
+{
 }
 
 Zombie::~Zombie()

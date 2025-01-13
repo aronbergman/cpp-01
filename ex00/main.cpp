@@ -14,10 +14,16 @@
 #include <csignal>
 #include <limits>
 
-/*  When choosing berween stack and heap:
-- Use stack for small, fixed-size objects with clear scope
-- Use heap for large objects or when size is unknown at compile time
-- Use heap when object needs to outlive the function where it's created
+/*  When choosing between stack and heap:
+-Use stack for small, fixed-size objects with clear scope
+-Use heap for large objects or when size is unknown at compile time
+-Use heap when object needs to outlive the function where it's created
+ */
+
+/*  Lors du choix entre stack et heap :
+- Utiliser la pile pour les petits objets de taille fixe avec une portée claire
+- Utiliser heap pour les objets de grande taille ou lorsque la taille est inconnue au moment de la compilation
+- Utiliser heap lorsque l’objet doit survivre à la fonction où il a été créé
  */
 
 int	main(void)
