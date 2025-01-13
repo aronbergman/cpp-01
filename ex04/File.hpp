@@ -6,14 +6,14 @@
 /*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 17:39:45 by abergman          #+#    #+#             */
-/*   Updated: 2025/01/12 23:12:39 by abergman         ###   ########.fr       */
+/*   Updated: 2025/01/14 00:25:12 by abergman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FILE_HPP
 #define FILE_HPP
 
-#include <cstdio>
+#include <fstream>
 #include <string>
 #include <iostream>
 
