@@ -34,3 +34,12 @@ int	main(void)
     delete[] horde;
 	return (0);
 }
+
+/* Dans cet exercice, j'ai créé N copies d'une classe. J'ai utilisé 
+une boucle for pour appeler la méthode "annonce" sur chaque copie.
+
+Cette méthode affiche le nom du zombie et son numéro à l'écran.
+Pour afficher le numéro, je le transforme d'abord de nombre en texte.
+
+J'ai créé ces copies dans le tas (heap), donc je dois utiliser la commande delete[]
+pour nettoyer la mémoire. Cette commande supprime toutes les copies créées. */

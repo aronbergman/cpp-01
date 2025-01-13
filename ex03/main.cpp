@@ -6,7 +6,7 @@
 /*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 17:11:37 by abergman          #+#    #+#             */
-/*   Updated: 2025/01/12 23:05:14 by abergman         ###   ########.fr       */
+/*   Updated: 2025/01/13 21:08:29 by abergman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,10 @@ int main()
     }
     return (0);
 }
+
+/* 
+Dans cet exercice, j'ai créé une classe "humain" de deux façons. Dans la première version,
+l'humain reçoit son arme dès sa création. Dans la seconde version, on peut lui donner
+ une arme plus tard grâce à une fonction "setWeapon". L'avantage de la deuxième version 
+ est que l'humain peut exister et fonctionner même s'il n'a pas d'arme. */
+ 

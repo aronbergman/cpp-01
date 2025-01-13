@@ -41,3 +41,14 @@ int	main(void)
     delete heapZombie;
 	return (0);
 }
+
+/* Dans cet exercice, je crée un zombie de deux façons différentes. La première utilise 
+la mémoire temporaire (la pile), et la deuxième utilise la mémoire permanente (le tas).
+
+Quand on utilise la pile, pas besoin de s'occuper de la mémoire - elle se libère toute seule.
+Par contre, avec le tas, il faut penser à libérer la mémoire après utilisation.
+
+Le tas est utile quand on veut que notre zombie continue d'exister même après la fin 
+de la fonction qui l'a créé. 
+
+Pour créer un zombie dans le tas, on utilise simplement le mot 'new'. */

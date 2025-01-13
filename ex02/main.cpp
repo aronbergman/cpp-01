@@ -57,3 +57,26 @@ int	main(void)
     std::cout << std::endl;
 	return (0);
 }
+
+/* Ce programme explique trois façons simples de stocker des données :
+
+1. Une variable simple (stringVAR) - qui contient directement le texte "HI THIS IS BRAIN"
+2. Un pointeur (stringPTR) - qui garde l'adresse où se trouve la variable stringVAR
+- On le crée avec le symbole &
+- On doit utiliser * pour voir ce qu'il contient
+1. Une référence (stringREF) - qui est juste un autre nom pour stringVAR
+- Elle est facile à créer
+- Elle fonctionne comme une variable normale
+
+Le programme montre trois choses importantes :
+
+1. Où sont stockées ces variables en mémoire
+2. Comment lire leur contenu de différentes façons
+3. Comment utiliser les pointeurs et les références
+
+À retenir :
+
+- Une référence doit toujours pointer vers quelque chose
+- Un pointeur peut ne pointer vers rien (null)
+- Les références sont plus sûres à utiliser
+- Les pointeurs sont plus flexibles mais il faut faire attention à bien les gérer */
