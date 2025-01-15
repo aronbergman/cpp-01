@@ -6,7 +6,7 @@
 #    By: abergman <abergman@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/17 11:36:19 by abergman          #+#    #+#              #
-#    Updated: 2025/01/09 19:29:38 by abergman         ###   ########.fr        #
+#    Updated: 2025/01/15 18:57:42 by abergman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ CC		:= c++
 FLAGS	:= -std=c++98 -Wall -Wextra -Werror -g3
 
 all: $(OBJ_DIR) $(NAME)
-	toilet -f smblock --filter metal "ex02: ./brain"
+	@toilet -f smblock --filter metal "ex02: ./brain"
 
 $(OBJ_DIR):
 	mkdir -p $(OBJ_DIR)
