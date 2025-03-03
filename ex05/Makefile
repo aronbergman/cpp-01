@@ -6,7 +6,7 @@
 #    By: abergman <abergman@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/10 21:30:22 by abergman          #+#    #+#              #
-#    Updated: 2025/01/15 18:56:57 by abergman         ###   ########.fr        #
+#    Updated: 2025/03/03 18:07:17 by abergman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ CC		:= c++
 FLAGS	:= -std=c++98 -Wall -Wextra -Werror -g3
 
 all: $(OBJ_DIR) $(NAME)
-	@toilet -f smblock --filter metal "ex04: ./harl"
+	@toilet -f smblock --filter metal "ex05: ./harl"
 
 $(OBJ_DIR):
 	mkdir -p $(OBJ_DIR)
